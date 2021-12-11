@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 01</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="ano-atual" placeholder="informe o Ano-Atual"/>
+        <input type="text" id="ano-nac" placeholder="informe o Ano-Nacimento"/>
+        <button onclick="qualIdade()">calcular</button>
+    </div>
+
+    <span id="idade"></span>
+
+    <script>
+        function qualIdade() {
+
+            let ano_atual = document.getElementById("ano-atual").value 
+            let ano_nac = document.getElementById("ano-nac").value
+
+            console.log(ano_atual - ano_nac)
+
+            let idade = ano_atual - ano_nac
+            console.log(idade)
+
+
+            document.getElementById('idade').innerHTML = idade
+        }
+    </script>
+</body>
+</html>

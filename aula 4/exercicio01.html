@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="moeda-americana" placeholder="informe quantidade de dolar">
+    
+
+        <button onclick="converter()">Converter moeda</button>
+    </div>
+
+    <span id="moeda"></span>
+
+    <script>
+
+        function converter() {
+
+            let moeda_americana = document.getElementById("moeda-americana").value
+           
+
+            let moeda = 5.61 * moeda_americana
+
+            document.getElementById('moeda'). innerHTML = moeda
+        }
+    </script>
+
+
+
+</body>
+</html>
